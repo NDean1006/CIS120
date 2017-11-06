@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code to debug</title>
+</head>
+<body>
+<script type="text/javascript">
+    document.write("<h1>Please enter the following information</h1>");
+    var stockname = "";
+    var priceBought = 0;
+    var priceToday = 0;
+    var numShares = 0;
+    var profit_goal = 0;
+    investAmt = 0;
+    profitIfSell = 0;
+    stockname = prompt("Enter name of stock ","");
+    priceBought = prompt("Enter the price you bought the stock for ",0);
+    priceToday = prompt("Enter the price of the stock today ",0);
+    numShares = prompt("Enter the number of shares you bought ",0);
+    profit_goal = prompt("Enter the amount of profit you want ",0);
+    investAmt = priceBought * numShares;
+    profitIfSell = priceToday * numShares - investAmt;
+    if (profitIfSell > profit_goal)
+    {
+        document.write("Recommend selling");
+    }
+    else
+    {
+        if (profitIfSell == profit_goal)
+        {
+            document.write("Watch closely");
+        }
+        else
+        {
+            document.write("Do not sell");
+        }
+    }
+</script>
+</body>
+</html>
+

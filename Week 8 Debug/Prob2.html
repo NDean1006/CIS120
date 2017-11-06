@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug</title>
+</head>
+<body>
+<script type="text/javascript">
+    var ct = 0;
+    var numItem = 0;
+    var priceItem = 0;
+    var totalDue = 0;
+    var discountTotalDue = 0;
+    var amt = 0;
+
+    while (ct <= 3)
+    {
+        numItem = prompt("Enter number of items you want ",0);
+        priceItem = prompt("Enter price of item ",0);
+        amt = parseFloat(numItem) * parseFloat(priceItem);
+        totalDue = parseFloat(totalDue) + parseFloat(amt);
+        ct = ct + 1
+    }
+
+    document.write("The amount you owe is " + totalDue);
+
+    if (totalDue > 500)
+    {
+        discountTotalDue = totalDue * .95;
+        msg = "5% discount";
+    }
+    else
+    {
+        if (totalDue > 250)
+        {
+            discountTotalDue = totalDue * .025;
+            msg = "2.5% discount";
+        }
+        else
+        {
+            discountTotalDue = totalDue;
+            msg = "No discount";
+        }
+    }
+    document.write("<br> The amount you owe with discount taken is " + discountTotalDue);
+    document.write("<br>" + msg);
+</script>
+</body>
+</html>

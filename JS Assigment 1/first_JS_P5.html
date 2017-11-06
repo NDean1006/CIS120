@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p5 </title>
+    <style type="text/css">
+     </style>
+</head>
+
+<script type="text/javascript">
+
+    var stdHours = parseFloat(window.prompt("Enter hours contracted",0));
+
+    var hoursWorked = parseFloat(window.prompt("Enter hours worked",0));
+
+    var oTRate = parseFloat(window.prompt("Enter overtime rate",0));
+
+    var rate = parseFloat(window.prompt("Enter hourly rate",0));
+
+
+
+    if ( hoursWorked >stdHours){
+        oT = hoursWorked - stdHours;
+        hoursWorked -= oT;
+        oT *= rate * oTRate;
+    }
+
+    hoursWorked *= rate;
+    var gP = parseFloat(oT)+parseFloat(hoursWorked);
+
+
+ /*
+*/
+    document.write(gP);
+
+
+
+
+</script>
+
+</html>

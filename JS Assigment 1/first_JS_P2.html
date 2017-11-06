@@ -1,0 +1,34 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p2 </title>
+    <style type="text/css">
+     </style>
+</head>
+<script type="text/javascript">
+    var game1 = window.prompt("Enter game 1 Score",0);
+    var game2 = window.prompt("Enter game 2 Score",0);
+    var game3 = window.prompt("Enter game 3 Score",0);
+
+    var currentSc = parseFloat(game1) + parseFloat(game2) + parseFloat(game3);
+
+        if (currentSc < 1000) {
+            var score = window.prompt("Enter game 4 Score", 0);
+        }
+        else {
+            score = 0;
+        }
+        var currentSc = parseInt(currentSc) + parseInt(score);
+
+        var m1 ="score: " + currentSc + "<br>" +  "!!! WINNER WINNER CHICKEN DINNER!!!";
+        var m2 ="score: " + currentSc + "<br>" + " Only " + (1000-currentSc) + " left to go!";
+
+        if (currentSc >= 1000 ){
+            document.write(m1);
+        }
+        else{
+            document.write(m2);
+        }
+</script>
+</html>

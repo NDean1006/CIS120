@@ -1,0 +1,23 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+     </style>
+</head>
+<script type="text/javascript">
+    var foodChar = window.prompt("Enter food charges",0);
+    var bevChar = window.prompt("Enter beverage charges",0);
+
+    var subTot = parseFloat(foodChar)  + parseFloat(bevChar);
+    var tax = 0.052;
+    var subTax = parseFloat(subTot) + (subTot * tax);
+    var Tip = 0.15;
+    var Tot = parseFloat(subTax) + (subTot * Tip);
+    var msg = "Sub-total: " + subTot + "<br>" + "Total with tax: " + subTax + "<br>" + "Total with tip: " + Tot;
+
+
+    document.write(msg);
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p4 </title>
+    <style type="text/css">
+     </style>
+</head>
+
+<script type="text/javascript">
+    var height  = window.prompt("Enter height");
+    var width  = window.prompt("Enter width");
+    var depth  = window.prompt("Enter depth");
+
+    var vol = height * width * depth;
+    var baseCost = 5;
+
+    if (vol > 50){
+        baseCost += 20;
+    }
+    else
+    {
+        baseCost += 10;
+    }
+
+    document.write(baseCost);
+
+</script>
+
+</html>

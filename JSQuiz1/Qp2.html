@@ -1,0 +1,29 @@
+
+<html>
+<script type="text/javascript">
+var itemNo = 0;
+var onhand = 0;
+var onorder = 0;
+var reordPt = 0;
+var numToOrder = 0;
+var tot = 0;
+var msg = " ";
+itemno = prompt("Enter the item number ",0);
+onhand = prompt("Enter number of items on hand ",0);
+onorder = prompt("Enter number of items on order" ,0);
+reordPt = prompt("Enter the reorder point ",0);
+tot = parseFloat(onhand) + parseFloat(onorder);
+if (tot >= reordPt)
+    {
+     numToOrder = 0;
+     msg = "No order necessary";
+    }
+else
+    {
+     numToOrder = reordpt - tot + 10;
+     msg = "Order enough to reach reorder point + 10";
+    }
+document.write("Number to order for item " + itemNo + " is " + numToOrder);
+document.write("<br>" + msg)
+</script>
+</html>

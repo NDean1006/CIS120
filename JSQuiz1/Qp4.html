@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug</title>
+</head>
+<body>
+<script type="text/javascript">
+    var topbonus = .1;
+    var midbonus = 5;
+    var amtsales = 0;
+    var bonuspay = 0;
+    var totalbonus = 0;
+    var ct = 1;
+    while (ct < 6)
+    {
+        amtsales = prompt("Enter the amount of sales ",0);
+        if (amtsales > 50000)
+        {
+            bonuspay = amtsales * topbonus;
+
+        }
+        else
+        {
+            if (amtsales > 25000)
+            {
+                bonuspay = amtsales * midbonus;
+            }
+            else
+            {
+                bonuspay = 0;
+            }
+        }
+        totalbonus = parseFloat(totalbonus) + parseFloat(bonuspay);
+        ct = ct + 1;
+    }
+    alert(totalbonus);
+    document.write("The total bonuses paid is " + totalbonus);
+</script>
+<h1>Done</h1>
+</body>
+</html>

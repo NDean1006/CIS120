@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p3 </title>
+    <style type="text/css">
+     </style>
+</head>
+
+<script type="text/javascript">
+    var grade1  = parseFloat(window.prompt("Enter Grade 1"))*15/100 ;
+    var grade2  = parseFloat(window.prompt("Enter Grade 1"))*25/100 ;
+    var grade3  = parseFloat(window.prompt("Enter Grade 1"))*40/100 ;
+    var grade4  = parseFloat(window.prompt("Enter Grade 1"))*20/100 ;
+
+    var totalGrade = parseFloat(grade1) + parseFloat(grade2) + parseFloat(grade3) + parseFloat(grade4);
+
+    if (totalGrade >= 90){
+        document.write(totalGrade,"- A");
+    }else if (totalGrade >= 80){
+        document.write(totalGrade,"- B");
+    }else if (totalGrade >= 70){
+        document.write(totalGrade,"- C");
+    }else if (totalGrade > 60){
+        document.write(totalGrade,"- D");
+    }else {
+        document.write(totalGrade,"- F");
+    }
+
+</script>
+
+</html>

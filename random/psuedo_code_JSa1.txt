@@ -1,0 +1,124 @@
+JavaScript Assignment #1
+
+Psuedo-code
+
+Problem #1:
+
+var foodChar = Sys in(n)
+var bevChar = Sys in(n)
+var subtot = foodChar + bevChar
+var tax = 0.052
+var subTax = subTot + (subTot * tax)
+var Tip = 0.015
+var Tot = subTax + (subTot * Tip)
+Sys.out (subTot /n subTax /n Tot)
+
+Problem #2:
+
+var game1 = n
+var game2 = n
+var game3 = n
+var currentSc = game1 + game2 + game3;
+
+loop
+ prompt enter score 
+ var score = Sys.in(n)
+
+ var currentSc += score
+ 
+if currentSc >= 1000
+ sys.out("score: " + currentSc + "! winner winner chicken dinner")
+ break
+else
+ Sys.out("score: " + currentSc + " Only " +  1000-currentSc + "left to go")
+
+Problem #3:
+
+promt -  enter grade 1
+var grade1  = Sys.in(n) * 15 / 100
+
+promt -  enter grade 2
+var grade2  = Sys.in(n) * 25 / 100
+
+promt -  enter grade 3
+var grade3  = Sys.in(n) * 20 / 100
+
+promt -  enter grade 4
+var grade4  = Sys.in(n) * 40 / 100
+
+var totGrade = grade1 + grade2 + grade3 + grade4;
+
+if totGrade >=90 
+	Sys.out A
+if totGrade >=80 & totgrade < 90
+	Sys.out B
+if totGrade >=70 & totGrade < 80
+	Sys.out C
+if totGrade > 60 & < 70
+	Sys.out D
+else 
+	Sys.out F
+
+Problem #4: 
+	
+prompt - enter height
+var height = sys.in
+
+prompt - enter width
+var width = sys.in
+
+prompt - enter depth
+var depth = sys.in
+
+var baseCost = height * width * depth *5
+
+if baseCost > 50
+	baseCost += 20
+else 
+	baseCost += 10
+
+sys.out baseCost
+
+Problem #5:
+
+promt -  eneter number of hours work
+var hoursWorked = sys.in(n)
+
+promt -  enter contracted hours
+var stdHours = sys.in(n)
+
+prompt - enter double time hours
+var dt = sys.in(n)
+
+prompt - enter rate of pay
+var rate = Sys.in(n)
+
+hoursWorked -= dt
+
+var oT = 0
+var dtPay = dt * rate * 2
+
+if hoursWorked > stdHours
+ oT = hoursWorked - stdHours 
+ hoursworked  -= oT
+ oT *= rate * 1.5
+end if
+
+ hoursWorked *= rate 
+
+Var gP = dt + ot + hoursWorked 
+
+Sys.out ("Gross pay: " + gP) 
+
+	 
+
+
+
+	 
+
+
+
+ 
+
+
+
