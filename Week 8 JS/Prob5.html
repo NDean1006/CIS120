@@ -1,0 +1,27 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+    </style>
+</head>
+<script type="text/javascript">
+    var ct = 0;
+    var price = 1000;
+    var discount = .9;
+    var prod = "New shiny thing!";
+
+    do
+        {
+        ct++;
+        var salePrice = Math.round(parseFloat(price) * parseFloat(discount)*100/100);
+        price = salePrice;
+        var msg = "Day "+ ct +": "+ prod+" sale price: " + salePrice + "!!!!!<br>";
+        document.write(msg);
+
+        } while (ct<5)
+
+</script>
+</html>
+

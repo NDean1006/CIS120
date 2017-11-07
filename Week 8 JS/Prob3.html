@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+    </style>
+</head>
+<script type="text/javascript">
+    var ct = 0;
+    var totScore = 0;
+    var msg = "";
+    var avg = 0;
+
+    do
+    {
+        var score = window.prompt("Enter score",0);
+        totScore += parseFloat(score);
+        ct++;
+    } while(totScore < 500)
+
+    var avg = parseFloat(totScore)/ct;
+
+    if (avg >=80){
+        msg = "good job!";
+    } else {
+        msg ="you need to try harder!";
+    }
+
+    document.write("Total: " + totScore + "<br> Average: " + avg + "<br>" + msg);
+</script>
+</html>

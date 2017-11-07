@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+    </style>
+</head>
+<script type="text/javascript">
+    var ct = 0;
+    var totScore = 0;
+    var msg = "";
+    var avg = 0;
+    var nxtScore ="";
+
+    do
+    {
+        var score = window.prompt("Enter score",0);
+        totScore += parseFloat(score);
+        ct++;
+
+        do {
+            nxtScore = window.prompt("Enter another Score? Y/N").toUpperCase().trim();
+            if (nxtScore === "N" || nxtScore ==="Y"){
+                break;
+            }else {
+                alert("Please enter valid response");
+            }
+        }while (nxtScore !== "Y" || nxtScore !=="N")
+
+        if (nxtScore == "N"){
+            break;
+        }
+
+    } while(true)
+
+    var avg = parseFloat(totScore)/ct;
+
+    if (avg >=80){
+        msg = "good job!";
+    } else {
+        msg ="you need to try harder!";
+    }
+
+    document.write("Total: " + totScore + "<br> Average: " + avg + "<br>" + msg);
+</script>
+</html>

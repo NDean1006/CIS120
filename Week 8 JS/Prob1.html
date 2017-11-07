@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+    </style>
+</head>
+<script type="text/javascript">
+    var num1 = 10;
+    var num2 = 20;
+    var wkSum = 0;
+    var rslt = 0;
+
+    do {
+        wkSum = parseInt(num1) + parseInt(num2);
+        if (wkSum >30){
+            num1 = parseInt(num1) - 2;
+            num2 = parseInt(num2) + 1;
+        } else {
+            num1 = parseInt(num1) - 1;
+            num2 = parseInt(num2) + 3;
+        }
+        break;
+    }while (num2 < 30)
+
+    rslt = parseInt(num1) + parseInt(num2);
+    document.write(rslt);
+</script>
+</html>
